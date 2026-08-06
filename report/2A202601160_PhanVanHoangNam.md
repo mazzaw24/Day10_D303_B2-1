@@ -20,8 +20,8 @@
 
 | Module/deliverable | File/hàm phụ trách | Input nhận vào | Output bàn giao  | Trạng thái                                 |
 | ------------------ | --------------------- | ---------------- | ----------------- | -------------------------------------------- |
-| Data Ingestion, Data Cleaning, Indexing      | `src/pipeline/ingestion.py`, `src/pipeline/indexing.py`           | Crossref REST API JSON response          | Vector Index, Cleaned JSON Records | Hoàn thành |
-| Xây dựng và tích hợp MiniLM Embedding      | `src/retrieval/embedding.py`           | Raw Text (Title, Abstract)          | Chunked Text & Vector Embeddings | Hoàn thành |
+| Data Ingestion, Data Cleaning, Indexing      | `src/ingestion/crossref.py`, `src/ingestion/cleaning.py`, `src/retrieval/index.py`           | Crossref REST API JSON response          | Vector Index, Cleaned JSON Records | Hoàn thành |
+| Xây dựng và tích hợp MiniLM Embedding      | `src/retrieval/embeddings.py`           | Raw Text (Title, Abstract)          | Chunked Text & Vector Embeddings | Hoàn thành |
 
 ### Việc hỗ trợ ngoài phạm vi chính
 

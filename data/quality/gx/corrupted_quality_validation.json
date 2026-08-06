@@ -1,0 +1,131 @@
+{
+  "success": false,
+  "statistics": {
+    "evaluated_expectations": 8,
+    "successful_expectations": 3,
+    "unsuccessful_expectations": 5,
+    "success_percent": 37.5
+  },
+  "results": [
+    {
+      "expectation_config": {
+        "expectation_type": "minimum_row_count",
+        "kwargs": {
+          "expectation": ">= 8"
+        }
+      },
+      "success": true,
+      "result": {
+        "observed_value": 20
+      },
+      "meta": {
+        "dimension": "volume"
+      }
+    },
+    {
+      "expectation_config": {
+        "expectation_type": "paper_id_complete",
+        "kwargs": {
+          "expectation": "== 20"
+        }
+      },
+      "success": true,
+      "result": {
+        "observed_value": 20
+      },
+      "meta": {
+        "dimension": "completeness"
+      }
+    },
+    {
+      "expectation_config": {
+        "expectation_type": "paper_id_unique",
+        "kwargs": {
+          "expectation": "== 20"
+        }
+      },
+      "success": false,
+      "result": {
+        "observed_value": 19
+      },
+      "meta": {
+        "dimension": "uniqueness"
+      }
+    },
+    {
+      "expectation_config": {
+        "expectation_type": "title_complete",
+        "kwargs": {
+          "expectation": "== 20"
+        }
+      },
+      "success": true,
+      "result": {
+        "observed_value": 20
+      },
+      "meta": {
+        "dimension": "completeness"
+      }
+    },
+    {
+      "expectation_config": {
+        "expectation_type": "summary_complete",
+        "kwargs": {
+          "expectation": "== 20"
+        }
+      },
+      "success": false,
+      "result": {
+        "observed_value": 19
+      },
+      "meta": {
+        "dimension": "completeness"
+      }
+    },
+    {
+      "expectation_config": {
+        "expectation_type": "summary_min_length",
+        "kwargs": {
+          "expectation": "== 20"
+        }
+      },
+      "success": false,
+      "result": {
+        "observed_value": 18
+      },
+      "meta": {
+        "dimension": "validity"
+      }
+    },
+    {
+      "expectation_config": {
+        "expectation_type": "embedding_text_complete",
+        "kwargs": {
+          "expectation": "== 20"
+        }
+      },
+      "success": false,
+      "result": {
+        "observed_value": 19
+      },
+      "meta": {
+        "dimension": "completeness"
+      }
+    },
+    {
+      "expectation_config": {
+        "expectation_type": "fresh_row_ratio",
+        "kwargs": {
+          "expectation": ">= 0.80"
+        }
+      },
+      "success": false,
+      "result": {
+        "observed_value": 0.65
+      },
+      "meta": {
+        "dimension": "freshness"
+      }
+    }
+  ]
+}

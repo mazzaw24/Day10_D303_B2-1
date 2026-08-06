@@ -1,0 +1,65 @@
+{
+  "report_name": "baseline_quality",
+  "total_rows": 22,
+  "success": true,
+  "passed_checks": 8,
+  "failed_checks": 0,
+  "checks": [
+    {
+      "name": "minimum_row_count",
+      "dimension": "volume",
+      "observed": 22,
+      "expectation": ">= 8",
+      "passed": true
+    },
+    {
+      "name": "paper_id_complete",
+      "dimension": "completeness",
+      "observed": 22,
+      "expectation": "== 22",
+      "passed": true
+    },
+    {
+      "name": "paper_id_unique",
+      "dimension": "uniqueness",
+      "observed": 22,
+      "expectation": "== 22",
+      "passed": true
+    },
+    {
+      "name": "title_complete",
+      "dimension": "completeness",
+      "observed": 22,
+      "expectation": "== 22",
+      "passed": true
+    },
+    {
+      "name": "summary_complete",
+      "dimension": "completeness",
+      "observed": 22,
+      "expectation": "== 22",
+      "passed": true
+    },
+    {
+      "name": "summary_min_length",
+      "dimension": "validity",
+      "observed": 22,
+      "expectation": "== 22",
+      "passed": true
+    },
+    {
+      "name": "embedding_text_complete",
+      "dimension": "completeness",
+      "observed": 22,
+      "expectation": "== 22",
+      "passed": true
+    },
+    {
+      "name": "fresh_row_ratio",
+      "dimension": "freshness",
+      "observed": 1.0,
+      "expectation": ">= 0.80",
+      "passed": true
+    }
+  ]
+}

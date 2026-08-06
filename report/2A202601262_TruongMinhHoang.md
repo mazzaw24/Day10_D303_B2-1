@@ -20,8 +20,8 @@
 
 | Module/deliverable                         | File/hàm phụ trách                                               | Input nhận vào   | Output bàn giao                   | Trạng thái |
 | ------------------------------------------ | ---------------------------------------------------------------- | ---------------- | --------------------------------- | ---------- |
-| Data Quality Checks, Freshness Constraints | `src/observability/quality.py`, `src/observability/freshness.py` | Parsed Records   | JSON Reports (Quality, Freshness) | Hoàn thành |
-| Pipeline Validation                        | `tests/`                                                         | Pipeline Scripts | Kết quả Pytest                    | Hoàn thành |
+| Data Quality Checks, Freshness Constraints | `src/observability/quality.py` | Parsed Records   | JSON Reports (Quality, Freshness) | Hoàn thành |
+| Pipeline Validation                        | `script/run_phase1.py`                                                         | Pipeline Scripts | Kết quả script                    | Hoàn thành |
 
 ### Việc hỗ trợ ngoài phạm vi chính
 

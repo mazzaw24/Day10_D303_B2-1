@@ -11,7 +11,7 @@
 | Khóa/Lớp         | K4 / D303          |
 | Tên nhóm         | B2-1    |
 | Vai trò chính    | Documentation / AI Ops                 |
-| Repository         | https://github.com/Dao-Trung-Hieu-2912/K3-DAY10-2A202601238-DaoTrungHieu |
+| Repository         | https://github.com/mazzaw24/Day10_D303_B2-1 |
 | Ngày hoàn thành | 2026-08-06               |
 
 ## 2. Vai trò và phạm vi công việc

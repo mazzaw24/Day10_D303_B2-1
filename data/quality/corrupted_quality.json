@@ -1,0 +1,65 @@
+{
+  "report_name": "corrupted_quality",
+  "total_rows": 20,
+  "success": false,
+  "passed_checks": 3,
+  "failed_checks": 5,
+  "checks": [
+    {
+      "name": "minimum_row_count",
+      "dimension": "volume",
+      "observed": 20,
+      "expectation": ">= 8",
+      "passed": true
+    },
+    {
+      "name": "paper_id_complete",
+      "dimension": "completeness",
+      "observed": 20,
+      "expectation": "== 20",
+      "passed": true
+    },
+    {
+      "name": "paper_id_unique",
+      "dimension": "uniqueness",
+      "observed": 19,
+      "expectation": "== 20",
+      "passed": false
+    },
+    {
+      "name": "title_complete",
+      "dimension": "completeness",
+      "observed": 20,
+      "expectation": "== 20",
+      "passed": true
+    },
+    {
+      "name": "summary_complete",
+      "dimension": "completeness",
+      "observed": 19,
+      "expectation": "== 20",
+      "passed": false
+    },
+    {
+      "name": "summary_min_length",
+      "dimension": "validity",
+      "observed": 18,
+      "expectation": "== 20",
+      "passed": false
+    },
+    {
+      "name": "embedding_text_complete",
+      "dimension": "completeness",
+      "observed": 19,
+      "expectation": "== 20",
+      "passed": false
+    },
+    {
+      "name": "fresh_row_ratio",
+      "dimension": "freshness",
+      "observed": 0.65,
+      "expectation": ">= 0.80",
+      "passed": false
+    }
+  ]
+}

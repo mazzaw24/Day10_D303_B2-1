@@ -1,0 +1,218 @@
+[
+  {
+    "id": "10.26634/javr.4.1.1115::summary",
+    "question_type": "summary",
+    "question": "What is the main finding of 'AI-Enabled Force and Torque Control for Human Robot Interaction'?",
+    "ground_truth": "Safe and intuitive human robot interaction (HRI) requires precise regulation of contact forces and torques while adapting to dynamic and uncertain human behavior.",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1115"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1115::authors",
+    "question_type": "authors",
+    "question": "Who authored 'AI-Enabled Force and Torque Control for Human Robot Interaction'?",
+    "ground_truth": "Vishal Khanna",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1115"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1115::date",
+    "question_type": "date",
+    "question": "When was 'AI-Enabled Force and Torque Control for Human Robot Interaction' published?",
+    "ground_truth": "2028-06-15",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1115"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1115::categories",
+    "question_type": "categories",
+    "question": "What categories are assigned to 'AI-Enabled Force and Torque Control for Human Robot Interaction'?",
+    "ground_truth": "journal-article",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1115"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1116::summary",
+    "question_type": "summary",
+    "question": "What is the main finding of 'Edge AI in Wearable Devices'?",
+    "ground_truth": "Wearable technologies have progressed from basic fitness trackers and digital watches into smart systems that can check vital signs, alert for anomalies, and transmit personalized health data.",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1116"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1116::authors",
+    "question_type": "authors",
+    "question": "Who authored 'Edge AI in Wearable Devices'?",
+    "ground_truth": "Prof.Anu Jyothy",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1116"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1116::date",
+    "question_type": "date",
+    "question": "When was 'Edge AI in Wearable Devices' published?",
+    "ground_truth": "2028-06-15",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1116"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1116::categories",
+    "question_type": "categories",
+    "question": "What categories are assigned to 'Edge AI in Wearable Devices'?",
+    "ground_truth": "journal-article",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1116"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.11309::summary",
+    "question_type": "summary",
+    "question": "What is the main finding of 'ICARECS-2026 - VR NEURAL CLASSROOM'?",
+    "ground_truth": "Abstract: The combination of artificial intelligence, natural language processing, and virtual reality is reshaping the educational environment by providing immersive and personalized learning experiences.",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.11309"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.11309::authors",
+    "question_type": "authors",
+    "question": "Who authored 'ICARECS-2026 - VR NEURAL CLASSROOM'?",
+    "ground_truth": "Dr.I karthiga",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.11309"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.11309::date",
+    "question_type": "date",
+    "question": "When was 'ICARECS-2026 - VR NEURAL CLASSROOM' published?",
+    "ground_truth": "2028-06-15",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.11309"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.11309::categories",
+    "question_type": "categories",
+    "question": "What categories are assigned to 'ICARECS-2026 - VR NEURAL CLASSROOM'?",
+    "ground_truth": "journal-article",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.11309"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1273::summary",
+    "question_type": "summary",
+    "question": "What is the main finding of 'The Rise of Augmented Reality in Teacher Education: a Bibliometric Analysis of Research'?",
+    "ground_truth": "In the digital era, immersive learning media is increasingly popular in the educational sphere.",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1273"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1273::authors",
+    "question_type": "authors",
+    "question": "Who authored 'The Rise of Augmented Reality in Teacher Education: a Bibliometric Analysis of Research'?",
+    "ground_truth": "Swaraj Naik",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1273"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1273::date",
+    "question_type": "date",
+    "question": "When was 'The Rise of Augmented Reality in Teacher Education: a Bibliometric Analysis of Research' published?",
+    "ground_truth": "2028-06-15",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1273"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1273::categories",
+    "question_type": "categories",
+    "question": "What categories are assigned to 'The Rise of Augmented Reality in Teacher Education: a Bibliometric Analysis of Research'?",
+    "ground_truth": "journal-article",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1273"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1477::summary",
+    "question_type": "summary",
+    "question": "What is the main finding of 'Mind Reader Robot: an Arduino-Based Game'?",
+    "ground_truth": "This paper presents the design and implementation of the Mind Reader Robot, an interactive Arduino-based game developed to make binary number concepts fun and engaging.",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1477"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1477::authors",
+    "question_type": "authors",
+    "question": "Who authored 'Mind Reader Robot: an Arduino-Based Game'?",
+    "ground_truth": "sritmkiran",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1477"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1477::date",
+    "question_type": "date",
+    "question": "When was 'Mind Reader Robot: an Arduino-Based Game' published?",
+    "ground_truth": "2028-06-15",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1477"
+    ]
+  },
+  {
+    "id": "10.26634/javr.4.1.1477::categories",
+    "question_type": "categories",
+    "question": "What categories are assigned to 'Mind Reader Robot: an Arduino-Based Game'?",
+    "ground_truth": "journal-article",
+    "ground_truth_doc_ids": [
+      "10.26634/javr.4.1.1477"
+    ]
+  },
+  {
+    "id": "10.22158/eltls.v8n3p21::summary",
+    "question_type": "summary",
+    "question": "What is the main finding of 'A Multimodal Discourse Analysis of Interpersonal Meaning in New-Type Farmers' Agricultural Promotion Short Videos on Douyin'?",
+    "ground_truth": "This study selects 15 short videos published over the past year by new-type farmers (xin nong ren) on Douyin as research corpus.",
+    "ground_truth_doc_ids": [
+      "10.22158/eltls.v8n3p21"
+    ]
+  },
+  {
+    "id": "10.22158/eltls.v8n3p21::authors",
+    "question_type": "authors",
+    "question": "Who authored 'A Multimodal Discourse Analysis of Interpersonal Meaning in New-Type Farmers' Agricultural Promotion Short Videos on Douyin'?",
+    "ground_truth": "Yixin Chen",
+    "ground_truth_doc_ids": [
+      "10.22158/eltls.v8n3p21"
+    ]
+  },
+  {
+    "id": "10.22158/eltls.v8n3p21::date",
+    "question_type": "date",
+    "question": "When was 'A Multimodal Discourse Analysis of Interpersonal Meaning in New-Type Farmers' Agricultural Promotion Short Videos on Douyin' published?",
+    "ground_truth": "2027-05-07",
+    "ground_truth_doc_ids": [
+      "10.22158/eltls.v8n3p21"
+    ]
+  },
+  {
+    "id": "10.22158/eltls.v8n3p21::categories",
+    "question_type": "categories",
+    "question": "What categories are assigned to 'A Multimodal Discourse Analysis of Interpersonal Meaning in New-Type Farmers' Agricultural Promotion Short Videos on Douyin'?",
+    "ground_truth": "journal-article",
+    "ground_truth_doc_ids": [
+      "10.22158/eltls.v8n3p21"
+    ]
+  }
+]
