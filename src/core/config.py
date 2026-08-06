@@ -144,30 +144,36 @@ def normalized_provider(settings: Settings) -> str:
     return provider
 
 
+def _is_configured(value: str | None) -> bool:
+    return bool(value and value.strip())
+
+
 def require_llm_credentials(settings: Settings) -> None:
     provider = normalized_provider(settings)
     if provider == "gemini":
-        if settings.google_api_key:
+        if _is_configured(settings.google_api_key):
             return
         raise RuntimeError("GOOGLE_API_KEY is required when LLM_PROVIDER=gemini.")
     if provider == "openai":
-        if settings.openai_api_key:
+        if _is_configured(settings.openai_api_key):
             return
         raise RuntimeError("OPENAI_API_KEY is required when LLM_PROVIDER=openai.")
     if provider == "anthropic":
-        if settings.anthropic_api_key:
+        if _is_configured(settings.anthropic_api_key):
             return
         raise RuntimeError("ANTHROPIC_API_KEY is required when LLM_PROVIDER=anthropic.")
     if provider == "openrouter":
-        if settings.openrouter_api_key:
+        if _is_configured(settings.openrouter_api_key):
             return
         raise RuntimeError("OPENROUTER_API_KEY is required when LLM_PROVIDER=openrouter.")
     if provider == "ollama":
         return
     if provider == "custom":
-        if settings.custom_llm_base_url:
-            return
-        raise RuntimeError("CUSTOM_LLM_BASE_URL is required when LLM_PROVIDER=custom.")
+        if not _is_configured(settings.custom_llm_base_url):
+            raise RuntimeError("CUSTOM_LLM_BASE_URL is required when LLM_PROVIDER=custom.")
+        if not _is_configured(settings.custom_llm_api_key):
+            raise RuntimeError("CUSTOM_LLM_API_KEY is required when LLM_PROVIDER=custom.")
+        return
     raise RuntimeError(
         "Unsupported LLM_PROVIDER. Expected one of: openai, gemini, anthropic, openrouter, ollama, custom."
     )
