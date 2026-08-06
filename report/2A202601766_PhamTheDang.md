@@ -8,7 +8,7 @@
 | ------------------ | -------------------------- |
 | Họ và tên       | Phạm Thế Đăng             |
 | MSSV               | 2A202601766                     |
-| Khóa/Lớp         | K4           |
+| Khóa/Lớp         | K4 / D303          |
 | Tên nhóm         | B2-1    |
 | Vai trò chính    | Documentation / AI Ops                 |
 | Repository         | https://github.com/Dao-Trung-Hieu-2912/K3-DAY10-2A202601238-DaoTrungHieu |
