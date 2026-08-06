@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="500" viewBox="0 0 920 500">
+<rect width="100%" height="100%" fill="white"/>
+<text x="30" y="35" font-family="Arial, sans-serif" font-size="22" font-weight="bold">Tiêu chuẩn vs Làm nhiễu vs Phục hồi</text>
+<line x1="190" y1="400" x2="890" y2="400" stroke="#222"/>
+<text x="235" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">retrieval_hit_rate</text>
+<rect x="190" y="70.00" width="34" height="330.00" fill="#4a4a4a" stroke="#222"/>
+<text x="207.0" y="64.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">1.000</text>
+<rect x="232" y="290.00" width="34" height="110.00" fill="#9a9a9a" stroke="#222"/>
+<text x="249.0" y="284.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">0.333</text>
+<rect x="274" y="345.00" width="34" height="55.00" fill="#d0d0d0" stroke="#222"/>
+<text x="291.0" y="339.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">0.167</text>
+<text x="395" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">mean_token_f1</text>
+<rect x="350" y="376.57" width="34" height="23.43" fill="#4a4a4a" stroke="#222"/>
+<text x="367.0" y="370.57" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">0.071</text>
+<rect x="392" y="393.39" width="34" height="6.61" fill="#9a9a9a" stroke="#222"/>
+<text x="409.0" y="387.39" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">0.020</text>
+<rect x="434" y="393.34" width="34" height="6.66" fill="#d0d0d0" stroke="#222"/>
+<text x="451.0" y="387.34" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">0.020</text>
+<text x="555" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">judge_accuracy</text>
+<rect x="510" y="111.25" width="34" height="288.75" fill="#4a4a4a" stroke="#222"/>
+<text x="527.0" y="105.25" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">0.875</text>
+<rect x="552" y="345.00" width="34" height="55.00" fill="#9a9a9a" stroke="#222"/>
+<text x="569.0" y="339.00" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">0.167</text>
+<rect x="594" y="372.50" width="34" height="27.50" fill="#d0d0d0" stroke="#222"/>
+<text x="611.0" y="366.50" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">0.083</text>
+<text x="715" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="12">mean_judge_score</text>
+<rect x="670" y="89.25" width="34" height="310.75" fill="#4a4a4a" stroke="#222"/>
+<text x="687.0" y="83.25" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">4.708</text>
+<rect x="712" y="281.75" width="34" height="118.25" fill="#9a9a9a" stroke="#222"/>
+<text x="729.0" y="275.75" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">1.792</text>
+<rect x="754" y="306.50" width="34" height="93.50" fill="#d0d0d0" stroke="#222"/>
+<text x="771.0" y="300.50" text-anchor="middle" font-family="Arial, sans-serif" font-size="11">1.417</text>
+<rect x="650" y="70" width="18" height="18" fill="#4a4a4a" stroke="#222"/>
+<text x="676" y="84" font-family="Arial, sans-serif" font-size="14">Baseline</text>
+<rect x="650" y="98" width="18" height="18" fill="#9a9a9a" stroke="#222"/>
+<text x="676" y="112" font-family="Arial, sans-serif" font-size="14">Làm nhiễu</text>
+<rect x="650" y="126" width="18" height="18" fill="#d0d0d0" stroke="#222"/>
+<text x="676" y="140" font-family="Arial, sans-serif" font-size="14">Phục hồi</text>
+</svg>
