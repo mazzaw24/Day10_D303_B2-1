@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the main finding of 'AI-Enabled Force and Torque Control for Human Robot Interaction'?",
+    "answer": "The main finding of 'AI-Enabled Force and Torque Control for Human Robot Interaction' is that an AI-enabled force and torque control framework significantly enhances adaptability, compliance, and safety in physical human-robot interaction by integrating machine learning techniques with conventional control methods, leading to improved robustness and user comfort in collaborative tasks.",
+    "retrieved_doc_ids": [
+      "10.26634/javr.4.1.1115",
+      "10.26634/javr.4.1.1477",
+      "10.26634/javr.4.1.11309",
+      "10.26634/javr.4.1.1116"
+    ]
+  },
+  {
+    "question": "Who authored 'AI-Enabled Force and Torque Control for Human Robot Interaction'?",
+    "answer": "The author of 'AI-Enabled Force and Torque Control for Human Robot Interaction' is Vishal Khanna.",
+    "retrieved_doc_ids": [
+      "10.26634/javr.4.1.1115",
+      "10.26634/javr.4.1.1477",
+      "10.5267/j.ijdns.2026.24",
+      "10.26634/javr.4.1.11309"
+    ]
+  },
+  {
+    "question": "When was 'AI-Enabled Force and Torque Control for Human Robot Interaction' published?",
+    "answer": "The paper 'AI-Enabled Force and Torque Control for Human Robot Interaction' was published on June 15, 2028.",
+    "retrieved_doc_ids": [
+      "10.26634/javr.4.1.1115",
+      "10.26634/javr.4.1.1477",
+      "10.5267/j.ijdns.2026.24",
+      "10.26634/javr.4.1.11309"
+    ]
+  },
+  {
+    "question": "What categories are assigned to 'AI-Enabled Force and Torque Control for Human Robot Interaction'?",
+    "answer": "The categories assigned to 'AI-Enabled Force and Torque Control for Human Robot Interaction' are: journal-article.",
+    "retrieved_doc_ids": [
+      "10.26634/javr.4.1.1115",
+      "10.26634/javr.4.1.1477",
+      "10.26634/javr.4.1.11309",
+      "10.26634/javr.4.1.1116"
+    ]
+  }
+]

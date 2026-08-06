@@ -1,0 +1,58 @@
+{
+  "input_rows": 22,
+  "output_rows": 20,
+  "events": [
+    {
+      "type": "drop_records",
+      "record_ids": [
+        "10.26634/javr.4.1.1115",
+        "10.26634/javr.4.1.1116",
+        "10.26634/javr.4.1.11309"
+      ],
+      "count": 3
+    },
+    {
+      "type": "blank_summary",
+      "record_ids": [
+        "10.26634/javr.4.1.1273"
+      ],
+      "count": 1
+    },
+    {
+      "type": "inject_noise",
+      "record_ids": [
+        "10.26634/javr.4.1.1477"
+      ],
+      "count": 1
+    },
+    {
+      "type": "truncate_title",
+      "record_ids": [
+        "10.22158/eltls.v8n3p21"
+      ],
+      "count": 1,
+      "max_chars": 12
+    },
+    {
+      "type": "stale_published",
+      "record_ids": [
+        "10.26634/javr.4.1.1273",
+        "10.26634/javr.4.1.1477",
+        "10.22158/eltls.v8n3p21",
+        "10.26877/jipmat.v11i1.2279",
+        "10.11116/9789461667755",
+        "10.32738/jeppm-2025-345"
+      ],
+      "count": 6,
+      "date": "2018-01-01"
+    },
+    {
+      "type": "duplicate_rows",
+      "record_ids": [
+        "10.26877/jipmat.v11i1.2279"
+      ],
+      "count": 1
+    }
+  ],
+  "deterministic": true
+}

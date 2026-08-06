@@ -1,0 +1,29 @@
+{
+  "samples": 24,
+  "retrieval_hit_rate": 0.3333333333333333,
+  "hit_at_3": 0.3333333333333333,
+  "hit_at_5": 0.3333333333333333,
+  "mean_token_precision": 0.02878988295654962,
+  "mean_token_recall": 0.04011914782748116,
+  "mean_token_f1": 0.020038164224349307,
+  "judge_accuracy": 0.16666666666666666,
+  "mean_judge_score": 1.7916666666666667,
+  "mean_latency_seconds": 1.0770631999999598,
+  "test_set_sha256": "b7541a16c52d730f8ea62e286e4eb3cded2638c0f5bb2b1838ca0e6ce1825872",
+  "index_backend": "chroma",
+  "embedding_backend": "sentence-transformers",
+  "answer_backend": "configured_llm",
+  "judge_backend": "configured_llm",
+  "ragas_backend": "configured_llm",
+  "llm_provider": "openai",
+  "llm_model": "gpt-4o-mini",
+  "ragas": {
+    "answer_relevancy": 0.24728797543043612,
+    "context_precision": 0.35185185182692896,
+    "context_recall": 0.4583333333333333,
+    "faithfulness": 0.25
+  },
+  "mean_hallucination_rate": 0.75,
+  "mean_context_precision": 0.351851851826929,
+  "mean_context_recall": 0.4583333333333333
+}
