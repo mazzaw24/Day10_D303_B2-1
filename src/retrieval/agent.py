@@ -2,8 +2,12 @@ from __future__ import annotations
 
 from typing import Any
 
-from langchain.agents import create_agent
-from langchain.tools import tool
+try:
+    from langchain.agents import create_agent
+    from langchain.tools import tool
+except ImportError:
+    create_agent = None
+    tool = None
 
 from core.config import Settings
 from retrieval.index import LocalEmbeddingIndex
@@ -11,6 +15,9 @@ from retrieval.llm import build_llm
 
 
 def build_agent(settings: Settings, index: LocalEmbeddingIndex):
+    if create_agent is None or tool is None:
+        raise RuntimeError("LangChain agents package is not installed.")
+
     @tool
     def semantic_search_papers(query: str, top_k: int = 4) -> str:
         """Search the local paper corpus with embeddings and return the most relevant papers."""

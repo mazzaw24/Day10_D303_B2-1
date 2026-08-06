@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import json
 import re
+from typing import Any
 
 from core.config import Settings
-from core.utils import first_sentence
 from retrieval.index import LocalEmbeddingIndex, SearchResult
+from retrieval.llm import build_llm
 
 
 @dataclass(frozen=True)
@@ -17,19 +19,43 @@ class AnswerResult:
     retrieved_titles: list[str]
 
 
-def _extract_answer(question: str, top_result: SearchResult) -> str:
-    lowered = question.lower()
-    metadata = top_result.metadata
-    if "who authored" in lowered or "list the authors" in lowered:
-        return metadata["authors_joined"]
-    if "when was" in lowered or "publication date" in lowered or "published on" in lowered:
-        return metadata["published"]
-    if "what categories" in lowered:
-        return metadata["categories_joined"]
-    return first_sentence(metadata["summary"])
+def _message_text(message: Any) -> str:
+    content = getattr(message, "content", message)
+    if isinstance(content, str):
+        return content.strip()
+    if isinstance(content, list):
+        parts: list[str] = []
+        for item in content:
+            if isinstance(item, str):
+                parts.append(item)
+            elif isinstance(item, dict) and isinstance(item.get("text"), str):
+                parts.append(item["text"])
+        return "\n".join(parts).strip()
+    return str(content).strip()
 
 
-def answer_question(question: str, settings: Settings, index: LocalEmbeddingIndex, top_k: int | None = None) -> AnswerResult:
+def _context_payload(retrieved: list[SearchResult]) -> str:
+    records = [
+        {
+            "paper_id": item.paper_id,
+            "title": item.title,
+            "content": item.content,
+        }
+        for item in retrieved
+    ]
+    return json.dumps(records, ensure_ascii=False, indent=2)
+
+
+def answer_question(
+    question: str,
+    settings: Settings,
+    index: LocalEmbeddingIndex,
+    top_k: int | None = None,
+) -> AnswerResult:
+    # Building the configured provider first guarantees that missing credentials
+    # or provider import/configuration errors stop the RAG run immediately.
+    llm = build_llm(settings=settings, temperature=0.0)
+
     title_match = re.search(r"'([^']+)'", question)
     exact = index.lookup(title_match.group(1)) if title_match else None
     retrieved = index.search(question, top_k=top_k)
@@ -43,10 +69,18 @@ def answer_question(question: str, settings: Settings, index: LocalEmbeddingInde
         )
         deduped = [exact_result] + [item for item in retrieved if item.paper_id != exact_result.paper_id]
         retrieved = deduped[: (top_k or settings.top_k)]
-    if not retrieved:
-        answer = "I don't know from the indexed corpus."
-    else:
-        answer = _extract_answer(question, retrieved[0])
+
+    prompt = (
+        "Answer the question using only the retrieved scholarly context below. "
+        "Do not use outside knowledge. If the context does not support an answer, "
+        "reply exactly: I don't know from the indexed corpus. Keep the answer concise.\n\n"
+        f"Question:\n{question}\n\n"
+        f"Retrieved scholarly context:\n{_context_payload(retrieved)}"
+    )
+    answer = _message_text(llm.invoke(prompt))
+    if not answer:
+        raise RuntimeError("The configured LLM returned an empty answer.")
+
     return AnswerResult(
         question=question,
         answer=answer,
