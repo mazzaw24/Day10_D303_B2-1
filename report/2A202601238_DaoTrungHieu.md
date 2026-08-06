@@ -8,7 +8,7 @@
 | ------------------ | -------------------------- |
 | Họ và tên       | Đào Trung Hiếu             |
 | MSSV               | 2A202601238                     |
-| Khóa/Lớp         | K4             |
+| Khóa/Lớp         | K4 / D303             |
 | Tên nhóm         | B2-1     |
 | Vai trò chính    | ML Engineer                 |
 | Repository         |https://github.com/mazzaw24/Day10_D303_B2-1 |
